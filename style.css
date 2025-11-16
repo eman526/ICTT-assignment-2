@@ -1,0 +1,108 @@
+#body{
+    background-color: lightblue ;
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#heading{
+font-family: 'Times New Roman', Times, serif;
+color: rgb(68, 30, 206);
+text-decoration: underline;
+font-weight: bold;
+}
+
+#subheading{
+    font-style: oblique ;
+    font-family: cursive;
+    color: grey;
+   
+}
+
+#div1{
+    background-color: rgb(168, 244, 247);
+    border-radius: 15%;
+}
+
+.field{
+background-color: rgb(142, 250, 250);
+border-radius: 15%;
+border-color: blue;
+
+}
+
+.margin{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.button{
+    color: white;
+    background-color: blue;
+     padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background: #3333cc;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    background-color: blueviolet;
+}
+
+#div2{
+    position: relative;
+    display: flexbox;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .left {
+        flex: 1; /* Takes half space */
+    }
+    
+    .right{
+        flex: 1; /* Takes half space */
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.right{
+    background-color: aqua;
+    border-radius: 30px;
+    border-color: blue;
+    border-width: 30px;
+    padding: 50px;
+    margin-left: 30%;
+}
